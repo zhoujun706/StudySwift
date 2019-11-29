@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,9 +11,13 @@
 		EBAE7017238FB39C0015EB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE7015238FB39C0015EB01 /* AppDelegate.swift */; };
 		EBAE7018238FB39C0015EB01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE7016238FB39C0015EB01 /* SceneDelegate.swift */; };
 		EBAE7023238FB3AD0015EB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAE701B238FB3AD0015EB01 /* LaunchScreen.storyboard */; };
-		EBAE7025238FB3AD0015EB01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBAE701F238FB3AD0015EB01 /* Info.plist */; };
 		EBAE7026238FB3AD0015EB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAE7022238FB3AD0015EB01 /* Assets.xcassets */; };
 		EBAE7028238FB6EE0015EB01 /* UTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE7027238FB6EE0015EB01 /* UTabbarController.swift */; };
+		EBAE702E238FCA720015EB01 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE702D238FCA720015EB01 /* HomeViewController.swift */; };
+		EBAE7030238FCA810015EB01 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE702F238FCA810015EB01 /* CategoryViewController.swift */; };
+		EBAE7032238FCA8F0015EB01 /* BookcaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE7031238FCA8F0015EB01 /* BookcaseViewController.swift */; };
+		EBAE7034238FCA970015EB01 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE7033238FCA970015EB01 /* MineViewController.swift */; };
+		EBAF71732390CB210028E16B /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAF71722390CB210028E16B /* NavigationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		EBAE701F238FB3AD0015EB01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBAE7022238FB3AD0015EB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBAE7027238FB6EE0015EB01 /* UTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabbarController.swift; sourceTree = "<group>"; };
+		EBAE702D238FCA720015EB01 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EBAE702F238FCA810015EB01 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EBAE7031238FCA8F0015EB01 /* BookcaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookcaseViewController.swift; sourceTree = "<group>"; };
+		EBAE7033238FCA970015EB01 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		EBAF71722390CB210028E16B /* NavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
 		FDC8C3A0741479D32678EF08 /* Pods_U17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,7 +56,6 @@
 				555427B6F6BD65F827604EB3 /* Pods-U17.debug.xcconfig */,
 				342A88D6EB8175186AB37BF8 /* Pods-U17.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,6 +82,7 @@
 			children = (
 				EBAE7014238FB39C0015EB01 /* Appdelegate */,
 				EBAE7019238FB3AD0015EB01 /* Base */,
+				EBAF71712390CA890028E16B /* Extension */,
 				EBAE7020238FB3AD0015EB01 /* Module */,
 				EBAE7021238FB3AD0015EB01 /* Resources */,
 				EBAE701A238FB3AD0015EB01 /* Support Files */,
@@ -110,6 +119,10 @@
 		EBAE7020238FB3AD0015EB01 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				EBAE702C238FC6390015EB01 /* Home */,
+				EBAE702A238FC6380015EB01 /* Category */,
+				EBAE7029238FC6380015EB01 /* Bookcase */,
+				EBAE702B238FC6380015EB01 /* Mine */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -120,6 +133,46 @@
 				EBAE7022238FB3AD0015EB01 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBAE7029238FC6380015EB01 /* Bookcase */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE7031238FCA8F0015EB01 /* BookcaseViewController.swift */,
+			);
+			path = Bookcase;
+			sourceTree = "<group>";
+		};
+		EBAE702A238FC6380015EB01 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE702F238FCA810015EB01 /* CategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EBAE702B238FC6380015EB01 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE7033238FCA970015EB01 /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		EBAE702C238FC6390015EB01 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE702D238FCA720015EB01 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBAF71712390CA890028E16B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBAF71722390CB210028E16B /* NavigationExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		FCC34CDCA79F15C920C0D678 /* Frameworks */ = {
@@ -190,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAE7025238FB3AD0015EB01 /* Info.plist in Resources */,
 				EBAE7023238FB3AD0015EB01 /* LaunchScreen.storyboard in Resources */,
 				EBAE7026238FB3AD0015EB01 /* Assets.xcassets in Resources */,
 			);
@@ -245,9 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAE7030238FCA810015EB01 /* CategoryViewController.swift in Sources */,
+				EBAF71732390CB210028E16B /* NavigationExtension.swift in Sources */,
 				EBAE7018238FB39C0015EB01 /* SceneDelegate.swift in Sources */,
 				EBAE7017238FB39C0015EB01 /* AppDelegate.swift in Sources */,
+				EBAE7034238FCA970015EB01 /* MineViewController.swift in Sources */,
+				EBAE7032238FCA8F0015EB01 /* BookcaseViewController.swift in Sources */,
 				EBAE7028238FB6EE0015EB01 /* UTabbarController.swift in Sources */,
+				EBAE702E238FCA720015EB01 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
